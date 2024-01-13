@@ -1,0 +1,22 @@
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.title{
+    color: #141c3a;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.125;
+}
+.desc{
+    margin: 40px auto;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.desc a{
+    color: #1a8cff;
+}

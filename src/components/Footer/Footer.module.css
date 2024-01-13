@@ -1,0 +1,68 @@
+.footer{
+    margin-top: 50px;
+    font-family: "Poppins", Arial, sans-serif;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 300;
+    background: #141313;
+    padding: 6em 0;
+}
+.footerContent{
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+strong{
+    padding: 3px;
+}
+.about p{
+    margin-bottom: 1rem;
+
+}
+.footerContent h2{
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.footerContent div{
+    text-align: left;
+}
+.addressPhone li{
+    display: flex;
+    margin-bottom: 20px;
+}
+.addressPhone li strong{
+    margin-right: 20px;
+}
+.addressPhone li a{
+    color: inherit;
+}
+.links a{
+    color: inherit;
+}
+.copyright{
+    border-top: 1px solid gray;
+    padding-top: 30px;
+}
+.toTop{
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    background-color: #ff084e;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toTopHide{
+    display: none;
+}
+.footerContent ul{
+    padding-left: 0;
+}

@@ -1,0 +1,14 @@
+.headerWrapper{
+    background-color: #0a1a2a;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    width: 60px;
+}

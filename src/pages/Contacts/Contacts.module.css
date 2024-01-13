@@ -1,0 +1,69 @@
+.title {
+    font-size: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.imgContainer {
+    flex: 1;
+
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    object-fit: contain;
+    animation: move 3s infinite ease alternate;
+}
+button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #53c28b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;}
+
+@keyframes move {
+    from {
+        transform: translateY(-15px);
+    }
+    to {
+        transform: translateY(0px) scale(1.03);
+    }
+}
+
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input,
+.textArea {
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #bbb;
+    border: 3px solid #bbb;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.map iframe{
+    align-items: center;
+    width: 1140px;
+    height: 400px;
+}

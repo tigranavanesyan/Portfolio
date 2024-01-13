@@ -1,0 +1,19 @@
+.www{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carouselWrapper{
+    margin: 0 auto;
+    width: 800px;
+}
+.item{
+    background-size: cover;
+    width: 100%;
+
+    padding-bottom: 50px;
+    background-color: rgba(64, 64, 68,0.5);
+    aspect-ratio: 2/1;
+
+
+}
