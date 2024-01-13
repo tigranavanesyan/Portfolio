@@ -1,18 +1,19 @@
 .title {
-    font-size: 60px;
+    /*font-size: 60px;*/
     margin-bottom: 50px;
     text-align: center;
+    font-size: 5vw;
 }
 
 .content {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 5vw;
+    padding: 30px 15px;
 }
 
 .imgContainer {
     flex: 1;
-
     position: relative;
 }
 
@@ -49,7 +50,6 @@ button{
 .textArea {
     padding: 20px;
     background-color: transparent;
-    border: none;
     outline: none;
     color: #bbb;
     border: 3px solid #bbb;
@@ -58,12 +58,20 @@ button{
 }
 
 .map{
-    width: 100%;
+    padding: 30px 15px;
+    max-width: 100%;
+    aspect-ratio: 3/1;
     display: flex;
     justify-content: center;
 }
 .map iframe{
-    align-items: center;
-    width: 1140px;
-    height: 400px;
+    width: 100%;
+}
+@media (max-width: 800px) {
+    .content{
+        flex-direction: column;
+    }
+    .image {
+        width: 50%;
+    }
 }

@@ -50,7 +50,7 @@ function Contacts(props) {
             <div className={s.map}>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d100412.96644297054!2d44.54473624109513!3d40.1740119597408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sam!4v1702975175418!5m2!1sru!2sam"
-                    width="600" height="450" allowFullScreen="" loading="lazy"
+                    allowFullScreen="" loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>

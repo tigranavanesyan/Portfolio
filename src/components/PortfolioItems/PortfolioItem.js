@@ -6,15 +6,9 @@ import ReactStars from "react-rating-stars-component";
 function PortfolioItem({work}) {
     {if(work){
         return (
-
             <div className={s.wrapper}>
                 <div className={s.hover}>
                     <h4>{work.title}</h4>
-                    <div className={s.tools}>
-                        {work.technologies.map((item,index)=>(
-                            <span key={index}>{item}</span>
-                        ))}
-                    </div>
                     <div className={s.btns}>
                         <button>view live</button>
                         <button>github</button>
@@ -32,7 +26,6 @@ function PortfolioItem({work}) {
                         </span>
                         <span>rated by researchers</span>
                     </div>
-
                     <div className={s.skills}>
                     <DraggibleScroll data={work.technologies}/>
                     </div>

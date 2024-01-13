@@ -18,31 +18,25 @@ function DraggibleScroll({data}) {
         } else {
             setScrollPosition(newScrollPosition);
         }
-
         containerRef.current.scrollLeft = newScrollPosition;
-
     };
     return (
-        <div className={s.container}>
-            <div className={s.arrowWrapper}>
-                <div ref={containerRef} className={s.scrollBar}>
-                    <div className={s.contentBox}>
-                        {data.map((item) => (
-                            <div key={item} className={s.card}>
-                                <span>{item}</span>
-                            </div>
-                        ))}
-                    </div>
-
+        <div className={s.arrowWrapper}>
+            <div ref={containerRef} className={s.scrollBar}>
+                <div className={s.contentBox}>
+                    {data.map((item) => (
+                        <div key={item} className={s.card}>
+                            <span>{item}</span>
+                        </div>
+                    ))}
                 </div>
-                <button className={s.left} onClick={() => handleScroll(-ITEM_WIDTH)}>
-                    <IoIosArrowDropleft />
-                </button>
-                <button className={s.right} onClick={() => handleScroll(ITEM_WIDTH)}>
-                    <IoIosArrowDropright />
-                </button>
             </div>
-
+            <button className={s.left} onClick={() => handleScroll(-ITEM_WIDTH)}>
+                <IoIosArrowDropleft/>
+            </button>
+            <button className={s.right} onClick={() => handleScroll(ITEM_WIDTH)}>
+                <IoIosArrowDropright/>
+            </button>
         </div>
     );
 }

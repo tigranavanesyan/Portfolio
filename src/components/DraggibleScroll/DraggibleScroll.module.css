@@ -1,8 +1,6 @@
-.container {
-    width: 100%;
-}
 .arrowWrapper{
-    width: 100%;
+    grid-template-columns: 1fr;
+    display: grid;
     position: relative;
 }
 .arrowWrapper button{
@@ -21,8 +19,7 @@
     left: -12px;
 }
 .scrollBar{
-    width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
     scroll-behavior: smooth;
 }
 .contentBox {

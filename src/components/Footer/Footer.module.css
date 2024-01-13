@@ -1,5 +1,5 @@
 .footer{
-    margin-top: 50px;
+    margin-top: 5vw;
     font-family: "Poppins", Arial, sans-serif;
     position: relative;
     color: rgba(255, 255, 255, 0.7);
@@ -7,24 +7,23 @@
     line-height: 1.8;
     font-weight: 300;
     background: #141313;
-    padding: 6em 0;
+    padding: 5vw 0;
 }
 .footerContent{
-    padding: 50px 30px;
+    padding: 5vw 2vw;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 30px;
+    gap: 5vw;
 }
 strong{
     padding: 3px;
 }
 .about p{
-    margin-bottom: 1rem;
-
+    margin-bottom: 1vw;
 }
 .footerContent h2{
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 5vw;
     font-size: 18px;
     font-weight: 400;
 }
@@ -33,10 +32,10 @@ strong{
 }
 .addressPhone li{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 3vw;
 }
 .addressPhone li strong{
-    margin-right: 20px;
+    margin-right: 2vw;
 }
 .addressPhone li a{
     color: inherit;
@@ -46,7 +45,7 @@ strong{
 }
 .copyright{
     border-top: 1px solid gray;
-    padding-top: 30px;
+    padding-top: 3vw;
 }
 .toTop{
     cursor: pointer;
@@ -65,4 +64,10 @@ strong{
 }
 .footerContent ul{
     padding-left: 0;
+}
+@media (max-width: 800px) {
+    .footerContent{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
