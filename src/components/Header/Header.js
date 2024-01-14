@@ -1,5 +1,4 @@
 import React from 'react';
-import Links from "../../pages/Links/Links";
 import s from './Header.module.css'
 import Navbar from "../navbar/Navbar";
 import logo from '../../assets/logo.svg'

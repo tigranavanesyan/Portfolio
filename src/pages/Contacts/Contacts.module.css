@@ -1,34 +1,70 @@
 .title {
-    /*font-size: 60px;*/
-    margin-bottom: 50px;
+    margin-bottom: 1vw;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4vw;
 }
-
 .content {
     display: flex;
     align-items: center;
-    gap: 5vw;
-    padding: 30px 15px;
+    gap: 3vw;
+    padding: 1vw;
 }
-
 .imgContainer {
     flex: 1;
     position: relative;
 }
-
 .image {
     width: 100%;
     object-fit: contain;
     animation: move 3s infinite ease alternate;
 }
+.form {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.inputRow{
+    width: 100%;
+}
+.inputRow p{
+    color: red;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.inputRow input,
+.inputRow textarea{
+    width: 100%;
+}
+.input,
+.textArea {
+    padding: 5px 10px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid #bbb;
+    font-size: 20px;
+    font-weight: bold;
+}
 button{
-    padding: 10px;
+    padding: 1vw;
     cursor: pointer;
     background-color: #53c28b;
     border: none;
     border-radius: 5px;
-    color: #fff;}
+    color: #fff;
+}
+.map{
+    padding: 3vw 1vw;
+    max-width: 100%;
+    aspect-ratio: 2/1;
+    display: flex;
+    justify-content: center;
+}
+.map iframe{
+    width: 100%;
+}
 
 @keyframes move {
     from {
@@ -39,34 +75,6 @@ button{
     }
 }
 
-.form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.input,
-.textArea {
-    padding: 20px;
-    background-color: transparent;
-    outline: none;
-    color: #bbb;
-    border: 3px solid #bbb;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.map{
-    padding: 30px 15px;
-    max-width: 100%;
-    aspect-ratio: 3/1;
-    display: flex;
-    justify-content: center;
-}
-.map iframe{
-    width: 100%;
-}
 @media (max-width: 800px) {
     .content{
         flex-direction: column;
