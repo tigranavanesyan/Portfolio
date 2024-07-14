@@ -13,7 +13,7 @@ function CarouselComp3({data}) {
     }
     return (
         <div className={s.wrapper}>
-            <h1>Our Brands</h1>
+            <h1>My works</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet.
             </p>

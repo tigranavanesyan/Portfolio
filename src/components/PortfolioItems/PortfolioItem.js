@@ -4,17 +4,21 @@ import DraggibleScroll from "../DraggibleScroll/DraggibleScroll";
 import ReactStars from "react-rating-stars-component";
 
 function PortfolioItem({work}) {
-    {if(work){
+    if(work){
         return (
             <div className={s.wrapper}>
                 <div className={s.hover}>
                     <h4>{work.title}</h4>
                     <div className={s.btns}>
-                        <button>view live</button>
-                        <button>github</button>
+                        <button>
+                            {work.url ? <a href={work.url} target='_blank' rel='noreferrer'>view live</a>:"view live"}
+                        </button>
+                        <button>
+                            {work.urlGitHub ? <a href={work.urlGitHub} target='_blank' rel='noreferrer'>github</a>:"github"}
+                        </button>
                     </div>
                 </div>
-                <img src={work.image}/>
+                <img src={work.image} alt='image'/>
                 <p className={s.desc}>
                     {work.title}
                 </p>
@@ -32,7 +36,7 @@ function PortfolioItem({work}) {
                 </div>
             </div>
         );
-    }}
+    }
 
 }
 

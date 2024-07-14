@@ -56,7 +56,8 @@
     left: 0;
     z-index: 20;
     width: 100%;
-    height: 75%;
+    aspect-ratio: 1/0.7;
+    border-radius: 10px;
 
     background-color: rgba(0,0,0, 0.8);
     color: white;
@@ -64,8 +65,8 @@
 }
 .wrapper:hover{
     z-index: 20;
-    scale: 1.1;
-    top: -20px;
+    scale: 1.01;
+    top: -5px;
 }
 .btns{
     display: flex;
@@ -92,6 +93,9 @@
 .starsRow span{
     display: flex;
     align-items: center;
+}
+.btns a{
+    color: inherit;
 }
 @media (max-width: 910px) {
     .starsRow{
