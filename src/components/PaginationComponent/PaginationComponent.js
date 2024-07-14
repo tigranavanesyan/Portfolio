@@ -17,22 +17,24 @@ const PaginationComponent = ({ data, itemsPerPage }) => {
 
     return (
         <div>
-            <div className={s.grid}>
-                {currentItems.map((item,ind) => (
-                    <div key={item.title}>
-                        <PortfolioItem work={data[ind + ((itemsPerPage * (currentPage - 1)))]}/>
-                    </div>
-                ))}
-            </div>
-            <div  className={(data.length < itemsPerPage )? s.paginationHide :""}>
-                <Pagination >
+            <div className={(data.length < itemsPerPage) ? s.paginationHide : ""}>
+                <Pagination>
                     {Array.from({length: Math.ceil(data.length / itemsPerPage)}).map((_, index) => (
-                        <Pagination.Item key={index} active={index + 1 === currentPage} onClick={() => paginate(index + 1)}>
+                        <Pagination.Item key={index} active={index + 1 === currentPage}
+                                         onClick={() => paginate(index + 1)}>
                             {index + 1}
                         </Pagination.Item>
                     ))}
                 </Pagination>
             </div>
+            <div className={s.grid}>
+                {currentItems.map((item, ind) => (
+                    <div key={item.title}>
+                        <PortfolioItem work={data[ind + ((itemsPerPage * (currentPage - 1)))]}/>
+                    </div>
+                ))}
+            </div>
+
 
         </div>
     );

@@ -1,8 +1,7 @@
 .wrapper{
-    margin-top: 20px;
+    margin-top: 50px;
     width: 100%;
     display: flex;
-    border: 1px solid red;
     flex-direction: column;
 }
 
@@ -11,5 +10,4 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    border: 1px solid green;
 }
