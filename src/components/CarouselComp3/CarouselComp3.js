@@ -9,7 +9,6 @@ function CarouselComp3({data}) {
         slidesToScroll:2,
         autoplay:true,
         autoplayInterval:3000
-
     }
     return (
         <div className={s.wrapper}>

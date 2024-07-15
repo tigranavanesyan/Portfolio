@@ -18,7 +18,7 @@ function PortfolioItem({work}) {
                         </button>
                     </div>
                 </div>
-                <img src={work.image} alt='image'/>
+                <img src={work.image} alt='img'/>
                 <p className={s.desc}>
                     {work.title}
                 </p>

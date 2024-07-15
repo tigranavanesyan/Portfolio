@@ -8,6 +8,7 @@
 }
 a{
   text-decoration: none!important;
+  color: inherit;
 }
 li{
   list-style: none;
@@ -36,7 +37,11 @@ li{
 
 div.slider-control-bottomcenter{
   position: relative;
-  bottom: -4vw;
+  bottom: -55px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: rgba(0, 0, 0, .9);
+  border-radius: 50%;
 }
 
 

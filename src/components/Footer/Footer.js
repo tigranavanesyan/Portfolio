@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import s from './Footer.module.css'
-import { CiLocationOn } from "react-icons/ci";
 import {IoIosArrowUp} from "react-icons/io";
 import {FaLocationDot} from "react-icons/fa6";
 import {FaPhone} from "react-icons/fa6";

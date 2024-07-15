@@ -1,12 +1,13 @@
 .title {
     margin-bottom: 1vw;
     text-align: center;
-    font-size: 4vw;
+    font-size: clamp(20px,calc(20px + (50 - 20) * ((100vw - 320px) / (1320 - 320))),50px);
 }
+
 .content {
     display: flex;
     align-items: center;
-    gap: 3vw;
+    gap: clamp(10px,calc(10px + (30 - 10) * ((100vw - 320px) / (1320 - 320))),30px);
     padding: 1vw;
 }
 .imgContainer {

@@ -9,8 +9,6 @@ function Welcome(props) {
                 I'm Tigran Avanesyan, a front end web developer
             </h1>
             <SocLinks/>
-
-
         </div>
     );
 }

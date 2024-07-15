@@ -25,56 +25,56 @@ const items = [
         icon: <FaJsSquare />,
         fill:'#f0db4f',
         skill: "JAVASCRIPT",
-        percentage: "70%"
+        percentage: "90%"
     },
     {
         id: "4",
-        icon: <FaReact />,
-        fill:'#00d8ff',
-        skill: "REACT",
+        icon: <TbBrandTypescript />,
+        fill:'#007BCD',
+        skill: "Typescript",
         percentage: "80%"
     },
     {
         id: "5",
+        icon: <FaReact />,
+        fill:'#00d8ff',
+        skill: "REACT",
+        percentage: "90%"
+    },
+    {
+        id: "6",
         icon: <TbBrandRedux />,
         fill:'#7749BD',
         skill: "Redux",
         percentage: "90%"
     },
     {
-        id: "6",
+        id: "7",
         icon: <TbBrandNextjs />,
         fill:'black',
         skill: "Next.js",
-        percentage: "60%"
-    },
-    {
-        id: "7",
-        icon: <IoLogoNodejs />,
-        fill:'#529F41',
-        skill: "Node.js",
-        percentage: "30%"
+        percentage: "70%"
     },
     {
         id: "8",
+        icon: <IoLogoNodejs />,
+        fill:'#529F41',
+        skill: "Node.js",
+        percentage: "60%"
+    },
+    {
+        id: "9",
         icon: <DiMongodb />,
         fill:'#57AA4B',
         skill: "MongoDB",
         percentage: "40%"
     },
     {
-        id: "9",
+        id: "10",
         icon: <FaGithub />,
         fill:'black',
         skill: "Git/GitHub",
-        percentage: "50%"
-    },
-    {
-        id: "10",
-        icon: <TbBrandTypescript />,
-        fill:'#007BCD',
-        skill: "Typescript",
-        percentage: "40%"
+        percentage: "80%"
     },
     {
         id: "11",
@@ -88,7 +88,7 @@ const items = [
         icon: <SiTailwindcss />,
         fill:'#34BEF5',
         skill: "Tailwind",
-        percentage: "40%"
+        percentage: "80%"
     },
     {
         id: "13",

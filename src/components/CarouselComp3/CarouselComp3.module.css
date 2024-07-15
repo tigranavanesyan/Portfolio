@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2vw 0;
+    padding: 50px 0;
 }
 .carouselWrapper{
     margin: 0 auto;

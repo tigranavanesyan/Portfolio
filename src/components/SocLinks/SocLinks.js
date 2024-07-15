@@ -6,9 +6,9 @@ import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 function SocLinks(props) {
     return (
         <div className={s.links}>
-            <span><IoLogoGithub/></span>
-            <span><FaLinkedinIn/></span>
-            <span><FaFacebookF/></span>
+            <a href='https://github.com/tigranavanesyan' target='_blank'><IoLogoGithub/></a>
+            <a href='https://www.linkedin.com/in/tigran-avanesyan/' target='_blank'><FaLinkedinIn/></a>
+            <a href='#'><FaFacebookF/></a>
         </div>
     );
 }

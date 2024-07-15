@@ -5,14 +5,14 @@ import works from '../../data/works'
 import PaginationComponent from "../PaginationComponent/PaginationComponent";
 
 function TabsByCategories(props) {
-    const [selectedCategori,SetSelectedCategori] = useState("All")
+    const [selectedCategory,SetSelectedCategory] = useState("All")
     const [categoriesArray, setCategoriesArray] = useState([])
     const [filteredArray, setFilteredArray] = useState([])
     const [id,setId] = useState(0)
 
 
     const tabChange = (cat,idbtn)=>{
-        SetSelectedCategori(cat)
+        SetSelectedCategory(cat)
         if(cat === 'All'){
             setFilteredArray(works)
         } else {
@@ -25,7 +25,7 @@ function TabsByCategories(props) {
         let arr = Array.from(new Set(works.flatMap(work => work.technologies)))
         arr.unshift('All')
         setCategoriesArray(arr)
-        tabChange(selectedCategori,0)
+        tabChange(selectedCategory,0)
     }, []);
 
     return (
@@ -37,7 +37,7 @@ function TabsByCategories(props) {
                     </div>
                 })}
             </div>
-            <h4>Here are {filteredArray.length} projects in which I used {selectedCategori}</h4>
+            <h4>Here are {filteredArray.length} projects in which I used {selectedCategory}</h4>
             <PaginationComponent data={filteredArray} itemsPerPage={6}/>
         </div>
     );
